@@ -90,6 +90,7 @@ tags:
 - Git does everything locally, it doesn’t distinguish remote repositories from any other repository like in another directory, there is no central server, when doing any operation with a remote repository needs to first fetch and then do it locally
 - a remote is just an alias for an URL of the remote repository, by default „origin“
 - all branches on the remote get named „\<remote\>/\<branch\>“ e.g. „origin/master“ to keep them separate from the local branches
+- fetches newest data, does merge locally, then pushes
 
 
 
