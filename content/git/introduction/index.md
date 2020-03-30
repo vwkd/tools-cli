@@ -25,8 +25,8 @@ tags:
 ![](git1.png)
 - chain of commits needs not be linear, can have branches
 ![](gitbranches.png)
-- Git stores branch as a file with a pointer to _last_ commit on that branch, Graph theory guarantees that can reconstruct branch chain from it since DAG can only go forwards, just a file instead of whole copy of directory
-- The HEAD file contains a pointer to the branch that is currently checked out, it’s in „detached HEAD state“ if it directly points to a commit instead of a branch, often talks about moving HEAD pointer to another commit but actually only current branch pointer is moved to which HEAD is pointing constantly
+- In Git a branch is just a pointer to _last_ commit on that branch, Graph theory guarantees that can reconstruct branch chain from it since DAG can only go forwards, just a file containing branch name and commit hash it's pointing to instead of whole copy of directory
+- HEAD is just a pointer to the branch that is currently checked out, it’s in „detached HEAD state“ if it directly points to a commit instead of a branch, often talks about moving HEAD pointer to another commit but actually only current branch pointer is moved to which HEAD is pointing constantly
 ![](gitpointers.png)
 
 
@@ -37,7 +37,7 @@ tags:
 
 ### Working tree / directory
 
-- project directory
+- project directory, files currently worked on
 - a checkout of a commit, after switching branches Git recreates working directory from last commit on current branch (i.e. where HEAD is currently pointing at)
 
 ### Staging area / directory
