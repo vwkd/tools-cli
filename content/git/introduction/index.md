@@ -5,6 +5,8 @@ index: 1
 tags:
 ---
 
+<!-- ToDo: finish, rework with book from Scott Chacon, integrate pictures from /static -->
+
 ## Ideas
 
 - Snapshots: snapshots of entire data at any point in time, not only differences, much simpler to go back in time, if files have not changed Git just references the previous identical file it has already stored, also metadata to see who changed what when
